@@ -28,12 +28,19 @@ https://inclass.kaggle.com/c/si650winter11 Size: 7086 sentences from social medi
 We have applied a set of pre-processing steps to make tweets suitable for SVM algorithm and improve performance. The following pre-processing has been done on the tweets:
 
 i. Lower Case - Convert the tweets to lower case
+
 ii. URLs - Convert www.* or https?://* to 'URL'
+
 iii. @username - Convert username to '__HANDLE'
+
 iv. #hashtag - Hash tags can give us some useful information, so we replace them with the exact same word without the hash. E.g. #Apple replaced with 'Apple'
+
 v. Trimming the tweet
+
 vi. Repeating words: People often use repeating characters while using colloquial language, such as "I’m exciteddddd". We replace characters repeating more than twice with just two characters, so that the result for above would be "I'm excitedd"
+
 vii. Emoticons: Use of emoticons is prevalent in tweets. We identify a set of emoticons and replace them with the reprentative sentiment i.e. '__positive__' or '__negative__'. E.g. ':)' is replaced by '__positive__'. Further, if emoticon(s) are found in the tweet, then the SVM classifier is not called and the tweet is classified as positive or negative simply based on the emoticon.
+
 
 
 ## Required libraries
@@ -48,13 +55,7 @@ iii. numpy (http://www.numpy.org/)
 
 iv. scipy (https://www.scipy.org/)
 
-The required libraries could also be installed from requirements.txt using:
-
-            pip install -r requirements.txt
 
 ## Output
 
 The output of the sentiment analyzer is either 0 (Negative) or 1 (Positive). 
-
-Cheers!
-
