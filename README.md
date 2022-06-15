@@ -5,7 +5,7 @@ A twitter sentiment classifier based on Support Vector Machines algorithm
 
 Sentiment analysis is a field of study which identifies the opinion of people expressed in a text using natural language processing tools. Social media such as Twitter provides a constant source of textual data, many with an opinion, which can be analyzed using Sentiment Analysis tools.
 
-The code is written in Python and uses scikit-learn library (http://scikit-learn.org/stable/). We use Support Vector Machine (SVM) with Linear kernel.
+The code is written in Python and uses scikit-learn library . We use Support Vector Machine (SVM) with Linear kernel.
 ## Classes of Sentiment
 
 Two classes: Negative(0) and Positive(1).
