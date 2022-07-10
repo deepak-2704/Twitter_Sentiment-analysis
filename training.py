@@ -1,15 +1,3 @@
-"""Author:Devika Kakkar
-Date: 7/18/16
-Name: training.py
-Version: 1.0
-Function: This module is used for defining, training
-and testing the SVM classifier and then dumping it as a pickle
-file which can be reused for sentiment prediction.
-Input: The training datasets from various sources.
-Output: The result of tesing(recall,precision, F1-score etc) and
-the trained classifier dumped in svmClassifier.pkl
-"""
-
 # Import required libraries
 
 import csv
