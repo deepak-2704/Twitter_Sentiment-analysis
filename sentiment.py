@@ -1,11 +1,3 @@
-"""Author:Devika Kakkar
-Date: 7/18/16
-Name: sentiment.py
-Version: 1.0
-Function: This module is used for predicting the sentiment of a tweet.
-Input: Tweet from the user.
-Output: The sentiment of the tweet (0 for negative and 1 for positive)
-"""
 #Import the required libraries
 
 import sys
